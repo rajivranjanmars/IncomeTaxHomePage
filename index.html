@@ -11,24 +11,10 @@
 
 
 <style>
-.aboutUs{
-    
-    background-color: #350fdd;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer; 
-   
- 
 
-}
 
-.feedback{
-    background-color: #350fe2;
+.button{
+  background-color: #350fe2;
   border: none;
   color: white;
   text-align: center;
@@ -39,7 +25,35 @@
   cursor: pointer;
     
 }
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 
 
@@ -57,10 +71,10 @@
              
         <th align="right" >
             
-                <td class="aboutUs"> About Us</td>
-                <td class="feedback">Feedback</td>
-                <td class="aboutUs"> Accessiblity</td>
-                <td class="feedback"> Contact Us</td>
+                <td class="button"> About Us</td>
+                <td class="button">Feedback</td>
+                <td class="button"> Accessiblity</td>
+                <td class="button"> Contact Us</td>
                
             
            </th> 
