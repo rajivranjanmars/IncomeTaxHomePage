@@ -1,19 +1,33 @@
 <!DOCTYPE html>
+
 <!-----------Income Tax Homepage --------------->
 <!---------------Created by-------------------->
 <!------------Rajiv Ranjan Mars---------------->
 <!---------------Sarthak----------------------->
 
 
-
+<html>
 <head>
   <meta charset="utf-8">
-  <title>e-Filing Home Page, Income Tax Department, Government of India</title>
+  <link rel="shortcut icon" href="/data/favicon.ico" type="image/x-icon">
+  <title>Income Tax Department Of India</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
 
 
   <style>
+    header.sticky{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+
+    }
+    .rightHeader{
+      position: right top;
+      float:right;
+    }
+
+
     .button {
       background-color: #0066cc;
       border: none;
@@ -49,41 +63,40 @@
       transition: 0.5s;
     }
 
-    .button:hover span {
-      padding-right: 25px;
-    }
 
-    .button:hover span:after {
-      opacity: 1;
-      right: 0;
-    }
   </style>
 
 </head>
 
 <body>
   <header>
-    <table style="width:100%">
+    <table   style="width:100%">
       <tr>
-        <th align="left"> <a href=""> <img src="/data/efilinglogo.gif" alt="Income Tax Of India" width="300"
+        <th > <a href=""> <img src="/data/efilinglogo.gif" alt="Income Tax Of India" width="300"
               height="100" /></a> </th>
 
-        <th align="right">
-
+        <th  >
+          <div class="rightHeader">
         <td class="button"> About Us</td>
         <td class="button">Feedback</td>
         <td class="button"> Accessiblity</td>
         <td class="button"> Contact Us</td>
+        <td >  <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit">Submit</button>
+        </form></td>
+
+      </div>
 
 
+
+      
         </th>
 
       </tr>
 
     </table>
-  </header>
-  <dive>
-  </dive>
+  
 
 
 
