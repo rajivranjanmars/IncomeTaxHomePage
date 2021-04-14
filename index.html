@@ -31,11 +31,22 @@
       top: 0;
 
     }
+    .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
     .rightHeader {
       position: right top;
       float: right;
     }
+    .right {
+  float: right;
+  width: 300px;
+  padding: 10px;
+}
 
 
     .button {
@@ -138,24 +149,19 @@
 </head>
 
 <body>
-  <header>
+  <header class ="clearfix">
     <table style="width:100%">
       <tr>
         <th> <a href=""> <img src="/data/efilinglogo.gif" alt="Income Tax Of India" width="300" height="100" /></a>
         </th>
 
         <th>
-          <div class="rightHeader">
+          <div class="right">
         <td class="button"> About Us</td>
         <td class="button">Feedback</td>
         <td class="button"> Accessiblity</td>
         <td class="button"> Contact Us</td>
-        <td>
-          <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit">Submit</button>
-          </form>
-        </td>
+        
         </div>
 
 
@@ -166,6 +172,13 @@
       </tr>
 
     </table>
+    
+    
+      <form class= "right" >
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Submit</button>
+      </form>
+    
   </header>
 
 
