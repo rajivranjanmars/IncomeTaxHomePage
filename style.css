@@ -21,7 +21,11 @@ width: 300px;
 padding: 10px;
 }
 
-
+a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
   .button {
     background-color: #0066cc;
     border: none;
@@ -32,6 +36,8 @@ padding: 10px;
     font-size: 40px;
     margin: 4px 2px;
     cursor: pointer;
+    text-decoration: none;
+    
 
   }
 
@@ -39,6 +45,7 @@ padding: 10px;
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+    color: white;
   }
 
   .button span {
@@ -46,6 +53,7 @@ padding: 10px;
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    color: white;
   }
 
   .button span:after {
@@ -55,6 +63,7 @@ padding: 10px;
     top: 0;
     right: -20px;
     transition: 0.5s;
+    color:white;
   }
 
 
