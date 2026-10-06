@@ -8,4 +8,4 @@ Run `python -m http.server 8000` here and open `http://localhost:8000/`. The imp
 
 ## Author
 
-Author: [rajivranjanmars](https://rajivranjana.in).
+Author: [Rajiv Ranjan](https://rajivranjan.in).
